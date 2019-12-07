@@ -1,0 +1,103 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Dec 07, 2019 at 04:29 AM
+-- Server version: 5.7.26
+-- PHP Version: 7.3.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `legend_of_zelda`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `zelda_characters`
+--
+
+CREATE TABLE `zelda_characters` (
+  `id` int(11) NOT NULL,
+  `cid` varchar(10) COLLATE utf8_bin NOT NULL,
+  `name` varchar(20) COLLATE utf8_bin NOT NULL,
+  `race` varchar(10) COLLATE utf8_bin NOT NULL,
+  `gender` varchar(10) COLLATE utf8_bin NOT NULL,
+  `hometown` varchar(20) COLLATE utf8_bin NOT NULL,
+  `description` varchar(200) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `zelda_characters`
+--
+
+INSERT INTO `zelda_characters` (`id`, `cid`, `name`, `race`, `gender`, `hometown`, `description`) VALUES
+(1, 'p-Link', 'Link', 'Hylian', 'Male', 'Kokiri Forest', 'Unlike other Kokiri, Link does not have a guardian fairy to call his own.'),
+(2, 'f-Link', 'Link', 'Hylian', 'Male', 'Kokiri Forest', 'The Hero of Time, wielder of the Master Sword and the Triforce of Courage.'),
+(3, 'p-Zelda', 'Princess Zelda', 'Hylian', 'Female', 'Hyrule Castle', 'The Princess of Destiny, who has a vision of a boy without a fairy and of dark clouds over Hyrule.'),
+(4, 'f-Sheik', 'Sheik', 'Sheikah', 'Male', 'Kakariko Village', 'A mysterious character who is said to be a member of the Sheikah race.'),
+(5, 'f-Zelda', 'Princess Zelda', 'Hylian', 'Female', 'Hyrule Castle', 'The seventh sage and leader of the sages, who wields the Triforce of Wisdom.'),
+(6, 'p-Ganon', 'Ganondorf', 'Gerudo', 'Male', 'Gerudo Valley', 'The King of Thieves, wielder of the Triforce of Power and conquerer of Hyrule.'),
+(7, 'f-Ganon', 'Ganon', 'Gerudo', 'Male', 'Gerudo Valley', 'A huge monstrous beast transformed by the Triforce of Power.'),
+(8, 'p-Impa', 'Impa', 'Sheikah', 'Female', 'Kakariko Village', 'The founder of Kakariko Village, currently working at Hyrule Castle as a bodyguard.'),
+(9, 'f-Impa', 'Impa (Sage)', 'Sheikah', 'Female', 'Kakariko Village', 'Reawakened as the Sage of Shadow after trying to seal the monster of the well.'),
+(10, 'p-Navi', 'Navi', 'Fairy', 'Female', 'Kokiri Forest', 'A young guardian fairy who has not been assigned to a Kokiri.'),
+(11, 'f-Navi', 'Navi', 'Fairy', 'Female', 'Kokiri Forest', 'Link\'s companion and guide until peace is restored to Hyrule.'),
+(12, 'p-Saria', 'Saria', 'Kokiri', 'Female', 'Kokiri Forest', 'Considered to be very pretty and is regarded as a motherly figure by her fellow Kokiri.'),
+(13, 'f-Saria', 'Saria (Sage)', 'Kokiri', 'Female', 'Kokiri Forest', 'Reawakened as the Sage of Forest after being captured in the Forest Temple.'),
+(14, 'p-Rauru', 'Kaepora Gaebora', 'Owl', 'Male', 'Hyrule', 'A wise old owl who is believed to be the reincarnation of an Ancient Sage.'),
+(15, 'f-Rauru', 'Rauru (Sage)', 'Hylian', 'Male', 'Hyrule', 'An Ancient Sage of Light who helped construct the Temple of Time.'),
+(16, 'p-Malon', 'Malon', 'Hylian', 'Female', 'Lon Lon Ranch', 'A farm girl who works and lives at the ranch. She is often found singing Epona\'s song.'),
+(17, 'f-Malon', 'Malon', 'Hylian', 'Female', 'Lon Lon Ranch', 'Works on the farm under Ingo to make sure the horses are treated right.'),
+(18, 'p-Talon', 'Talon', 'Hylian', 'Male', 'Lon Lon Ranch', 'A carefree and lazy owner of Lon Lon Ranch. He is often found sleeping.'),
+(19, 'f-Talon', 'Talon', 'Hylian', 'Male', 'Lon Lon Ranch', 'Ousted by Ingo from his own ranch, Talon spends his time sleeping in a house in Kakariko Village.'),
+(20, 'p-Ingo', 'Ingo', 'Hylian', 'Male', 'Hyrule', 'A short-tempered and hard-working farmhand at Lon Lon Ranch.'),
+(21, 'f-Ingo', 'Ingo', 'Hylian', 'Male', 'Hyrule', 'Granted ownership of Lon Lon Ranch by Ganondorf. He charges rupees for horse rides.'),
+(22, 'p-Epona', 'Epona', 'Horse', 'Female', 'Lon Lon Ranch', 'A young, shy filly who keeps her distance from everybody except Malon.'),
+(23, 'f-Epona', 'Epona', 'Horse', 'Female', 'Lon Lon Ranch', 'Thought to be untameable by Ingo until Link plays her song on his ocarina.'),
+(24, 'p-Mido', 'Mido', 'Kokiri', 'Male', 'Kokiri Forest', 'Mido considers himself the boss of the Kokiri, despite the fact he can act quite childish at times.'),
+(25, 'f-Mido', 'Mido', 'Kokiri', 'Male', 'Kokiri Forest', 'Upset that Saria will never return, Mido keeps his promise to give her message to Link.'),
+(26, 'p-Darunia', 'Darunia', 'Goron', 'Male', 'Goron City', 'The patriarch of the Goron tribe who is often perceived as rude. In reality, he is just depressed.'),
+(27, 'f-Darunia', 'Darunia (Sage)', 'Goron', 'Male', 'Goron City', 'Reawakened as the Sage of Fire after going against an ancient dragon. He and Link are now true brothers.'),
+(28, 'p-Ruto', 'Princess Ruto', 'Zora', 'Female', 'Zora\'s Domain', 'The princess of the Zoras who is in charge of feeding their patron deity, Lord Jabu-Jabu.'),
+(29, 'f-Ruto', 'Princess Ruto (Sage)', 'Zora', 'Female', 'Zora\'s Domain', 'Reawakened as the Sage of Water after vanishing in the Water Temple. She is engaged to Link.'),
+(30, 'p-Zora', 'King Zora', 'Zora', 'Male', 'Zora\'s Domain', 'Also known as King Zora De Bon XVI, he sits on his throne, blocking the way to Lord Jabu-Jabu.'),
+(31, 'f-Zora', 'King Zora', 'Zora', 'Male', 'Zora\'s Domain', 'Grateful to have been defrosted, King Zora offers Link the Zora Tunic to help him breathe underwater.'),
+(32, 'p-Koume', 'Koume', 'Gerudo', 'Female', 'Gerudo Valley', 'A witch who has the power to control fire. She is Ganondorf\'s surrogate mother.'),
+(33, 'p-Kotake', 'Kotake', 'Gerudo', 'Female', 'Gerudo Valley', 'A witch who has the power to control ice. She is Ganondorf\'s surrogate mother.'),
+(34, 'f-Twinrova', 'Twinrova', 'Gerudo', 'Female', 'Gerudo Valley', 'The merged form of Koume and Kotake. She holds power over fire and ice.'),
+(35, 'p-Nabooru', 'Nabooru', 'Gerudo', 'Female', 'Gerudo Valley', 'A Gerudo thief who has her eyes set on the legendary treasure of the Spirit Temple.'),
+(36, 'f-Nabooru', 'Nabooru (Sage)', 'Gerudo', 'Female', 'Gerudo Valley', 'Reawakened as the Sage of Spirit after being brainwashed to fight Link as an Iron Knuckle.');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `zelda_characters`
+--
+ALTER TABLE `zelda_characters`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `zelda_characters`
+--
+ALTER TABLE `zelda_characters`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
