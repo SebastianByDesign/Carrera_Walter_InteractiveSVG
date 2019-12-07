@@ -1,0 +1,36 @@
+<div class="opening">
+    <p>It can be difficult to keep track of relationships over time. As you meet more people, more ties are made and past ones change.</p>
+    <p>&nbsp;</p>
+    <p>Ocarina of Time has a seven year gap in which many of the characters change, and so do their relationships. In order to track them, you can view them on the chart on the left.</p>
+    <p>&nbsp;</p>
+    <p>Hover over a character to see who they know and what their relationship looks like. To go between the past and future, click on the pedestal below the chart.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+</div>
+
+{{#each character}}
+    <table id="{{cid}}" class="hidden">
+        <tbody>
+            <tr>
+                <th><p>Name</p></th>
+                <td><p>{{name}}</p></td>
+            </tr>
+            <tr>
+                <th><p>Race</p></th>
+                <td><p>{{race}}</p></td>
+            </tr>
+            <tr>
+                <th><p>Gender</p></th>
+                <td><p>{{gender}}</p></td>
+            </tr>
+            <tr>
+                <th><p>Hometown</p></th>
+                <td><p>{{hometown}}</p></td>
+            </tr>
+            <tr>
+                <td colspan="2"><p>{{description}}</p><p>&nbsp;</p><p>&nbsp;</p></td>
+            </tr>
+        </tbody>
+    </table>
+    
+{{/each}}

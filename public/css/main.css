@@ -1,0 +1,70 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(../images/paper-1074131_1920.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    -webkit-box-shadow: inset 100vw 100vw 25px 200px rgba(221, 221, 221, 0.25);
+    -moz-box-shadow: inset 100vw 100vw 25px 200px rgba(221, 221, 221, 0.25);
+    box-shadow: inset 100vw 100vw 25px 200px rgba(221, 221, 221, 0.25);
+
+}
+
+.container {
+    display: flex;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65vw;
+    align-items: center;
+}
+
+.characters {
+    width: 35vw;
+    padding: 5vh 5vw;
+}
+
+.logo {
+    width: 15vw;
+
+}
+
+.legend {
+    width: 20vw;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.opening p {
+    font-family: 'Open Sans', sans-serif;
+    width: 30vw;
+}
+
+table {
+    width: 30vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+th, td{
+    padding: 5px 0;
+}
+
+th {
+    width: 50%;
+    text-align: left;
+}
